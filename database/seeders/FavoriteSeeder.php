@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
+use App\Models\Favorite;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ProductSeeder extends Seeder
+class FavoriteSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Product::factory(100)->create();
+        Favorite::factory(100)->create();
     }
 }

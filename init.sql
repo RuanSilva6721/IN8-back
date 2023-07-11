@@ -5,5 +5,5 @@ CREATE USER "RuanFelipe" WITH PASSWORD 'password';
 CREATE DATABASE your_database;
 GRANT ALL PRIVILEGES ON DATABASE your_database TO "RuanFelipe";
 
--- Cria o banco de dados "appliance"
-CREATE DATABASE appliance;
+-- Cria o banco de dados "in8"
+CREATE DATABASE in8;

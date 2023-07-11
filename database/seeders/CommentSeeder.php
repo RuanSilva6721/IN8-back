@@ -2,16 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Brand;
+use App\Models\Comment;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class BrandSeeder extends Seeder
+class CommentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Brand::factory(10)->create();
+        Comment::factory(100)->create();
     }
 }

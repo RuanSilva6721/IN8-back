@@ -5,20 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Recipe extends Model
 {
     use HasFactory;
 
-    protected $table = "products";
+    protected $table = 'recipes';
+    
     protected $fillable = [
-        'name',
+        'user_id',
+        'title',
         'description',
-        'voltage',
-        'brand_id'
+        'instructions',
+        'created_at',
     ];
 
-    public function car()
+    public function user()
     {
-        return $this->belongsTo(Brand::class);
+        return $this->belongsTo(User::class);
     }
 }
